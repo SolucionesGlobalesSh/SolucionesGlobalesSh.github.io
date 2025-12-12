@@ -1,54 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones Globales Shalom</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
+    <header class="hero-section">
         <div class="container">
             <h1>Soluciones Globales Shalom</h1>
-            <p>Ofrecemos servicios integrales para tu negocio</p>
+            <p class="tagline">Soluciones integrales para tu negocio: desde mantenimiento hasta procurement gubernamental. Pensamos en grande, construimos fuerte y expandimos oportunidades para todos.</p>
+            <a href="#servicios" class="cta-button">Descubre cómo te ayudamos</a>
         </div>
     </header>
 
-    <section id="servicios">
+    <section id="servicios" class="services-section">
         <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <ul>
-                <li>Servicio 1: Descripción breve (ej. Consultoría empresarial).</li>
-                <li>Servicio 2: Descripción breve (ej. Soluciones tecnológicas).</li>
-                <li>Servicio 3: Descripción breve (ej. Soporte logístico).</li>
-                <!-- Agrega más servicios aquí según lo que ofrezca la empresa -->
-            </ul>
+            <h2>Cómo te ayudamos</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="mantenimiento.jpg" alt="Mantenimiento" class="service-image">
+                    <h3>Mantenimiento Integral</h3>
+                    <p>Servicios de upkeep para instalaciones globales, asegurando eficiencia y durabilidad en todos tus activos.</p>
+                </div>
+                <div class="service-item">
+                    <img src="procurement.jpg" alt="Procurement Gubernamental" class="service-image">
+                    <h3>Procurement y Facturación para ONCE</h3>
+                    <p>Manejamos solicitudes de artículos y proyectos gubernamentales, optimizando compras y facturación para entidades como ONCE.</p>
+                </div>
+                <div class="service-item">
+                    <img src="consultoria.jpg" alt="Consultoría" class="service-image">
+                    <h3>Consultoría Estratégica</h3>
+                    <p>Asesoría personalizada para transformar oportunidades en acciones concretas, con enfoque en crecimiento global.</p>
+                </div>
+                <div class="service-item">
+                    <img src="logistica.jpg" alt="Logística" class="service-image">
+                    <h3>Soluciones Logísticas</h3>
+                    <p>Gestión de cadenas de suministro eficientes, adaptadas a necesidades locales e internacionales.</p>
+                </div>
+                <!-- Agrega más servicios si necesitas, ej. IT, sostenibilidad -->
+            </div>
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="insights" class="insights-section">
+        <div class="container">
+            <h2>Insights y Casos de Éxito</h2>
+            <div class="insights-grid">
+                <div class="insight-item">
+                    <h3>Caso: Optimización de Procurement para Entidad Gubernamental</h3>
+                    <p>Redujimos costos en 30% para un proyecto de ONCE mediante solicitudes eficientes de artículos.</p>
+                    <a href="#">Lee más</a>
+                </div>
+                <div class="insight-item">
+                    <h3>Reporte: Tendencias en Mantenimiento Global</h3>
+                    <p>Explora cómo la IA está revolucionando el upkeep de instalaciones.</p>
+                    <a href="#">Descarga</a>
+                </div>
+                <!-- Agrega más casos o insights -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
         <div class="container">
             <h2>Contáctanos</h2>
-            <p>Envíanos un mensaje a través de nuestro formulario.</p>
-            <!-- Aquí embebe el iframe de Microsoft Forms -->
-            <iframe width="640px" height="480px"
-                src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAaPjLIBUOTFXSFpPNk1VSk9MSEgxM1MzS00wSUcwTy4u&embed=true"
-                frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
-                allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+            <p>Envíanos un mensaje para discutir cómo podemos apoyar tu negocio.</p>
+            <iframe width="640px" height="480px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAaPjLIBUOTFXSFpPNk1VSk9MSEgxM1MzS00wSUcwTy4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2025 Soluciones Globales Shalom. Todos los derechos reservados.</p>
-            <a href="#contacto">Contáctanos</a>
+            <a href="#contacto" class="cta-button">Agenda una consulta</a>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
