@@ -1,106 +1,26 @@
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .hero-section {
-    background-color: #004b87; /* Azul profesional como en consultorías */
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    background-color: #004b87;
+    height: 80vh;
+    min-height: 500px;
 }
 
-.tagline {
-    font-size: 1.5em;
-    margin: 20px 0;
-    font-weight: 300;
+.card {
+    transition: transform 0.3s;
 }
 
-.cta-button {
-    background-color: #ffffff;
-    color: #004b87;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.cta-button:hover {
-    background-color: #e0e0e0;
-}
-
-.services-section h2,
-.insights-section h2,
-.contact-section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #004b87;
-    padding-bottom: 10px;
-}
-
-.services-grid,
-.insights-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.service-item,
-.insight-item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: box-shadow 0.3s;
-    text-align: center;
-}
-
-.service-item:hover,
-.insight-item:hover {
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.service-image {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9; /* Como en McKinsey para imágenes consistentes */
+.card-img-top {
+    height: 200px;
     object-fit: cover;
-    border-radius: 8px 8px 0 0;
 }
 
-.insight-item a {
-    color: #004b87;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-section {
-    background: #e0e0e0;
-    padding: 60px 0;
-    text-align: center;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-@media (max-width: 768px) {
-    .hero-section { padding: 60px 10px; }
-    .tagline { font-size: 1.2em; }
-    h2 { font-size: 2em; }
+iframe.mx-auto {
+    max-width: 100%;
 }
