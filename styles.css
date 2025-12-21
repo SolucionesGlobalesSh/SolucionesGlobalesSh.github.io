@@ -1,26 +1,82 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #0a1a2e; /* Dark blue background */
+}
+
+.bg-primary-dark {
+    background-color: #0a1a2e;
+}
+
+.navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: white !important;
 }
 
 .hero-section {
-    background-color: #004b87;
-    height: 80vh;
-    min-height: 500px;
+    padding-top: 100px; /* Para offset de navbar fixed */
+    min-height: 60vh;
 }
 
-.card {
-    transition: transform 0.3s;
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.btn-arrow {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
 }
 
 .card-img-top {
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    width: 100%;
 }
 
-iframe.mx-auto {
-    max-width: 100%;
+.card {
+    overflow: hidden;
+    position: relative;
+}
+
+.chat-bubble {
+    background-color: #4c6ef5;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.position-absolute {
+    z-index: 1;
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
 }
